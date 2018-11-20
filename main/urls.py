@@ -34,6 +34,7 @@ from facebook.views import pages
 from facebook.views import edit
 from facebook.views import remove
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', play),
@@ -45,6 +46,7 @@ urlpatterns = [
     path('warn/', warn),
     path('multiple/', multiple),
 
+    path('new/', new_feed),
     path('', newsfeed),
     path('trynewsfeed/',trynewsfeed),
     path('feed/<pk>/',detail_feed),
