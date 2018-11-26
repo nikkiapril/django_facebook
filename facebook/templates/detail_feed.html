@@ -78,21 +78,24 @@
 
 <div class="comment_list">
     {% for comment in feed.comments.all %}
-    <div class="comment"><span class="name">{{ comment.author }}</span> {{ comment.text }}</div>
-    <div class="comment__date">{{ comment.created_at }} <a href="/코멘트삭제주소"><img src="/static/ic_delete.png" height="16px"></a></div>
+    <div class="comment"><span class="name">{{ comment.author }}</span> {{ comment.text }}
+        <a href="/feed/{{comment.pk}}/remove_comment"><img src="/static/ic_delete.png" height="16px"></a>
+        <a href="/feed/{{comment.pk }}/edit_comment"><img src="/static/ic_edit.png" height="16px"></a>
+    </div>
+    <div class="comment__date">{{ comment.created_at }}</div>
     {% endfor %}
     <div>
- <div class="form-wrapper">
-    <span>Comments</span>
-    <form action ="" method="POST">
-        {% csrf_token %}
-        <input type="text" name="nickname" placeholder="이름"> <br/>
-        <input type="password" name="password" placeholder="비밀번호"><br/>
-        <textarea name="reply" placeholder="코멘트내용"></textarea>
-        <button type="submit">등록</button>
-    </form>
- </div>
-</div>
+        <div class="form-wrapper">
+            <span>Comments</span>
+            <form action ="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="nickname" placeholder="이름"> <br/>
+                <input type="password" name="password" placeholder="비밀번호"><br/>
+                <textarea name="reply" placeholder="코멘트내용"></textarea>
+                <button type="submit">등록</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 

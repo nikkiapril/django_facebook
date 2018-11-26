@@ -3,6 +3,12 @@ from facebook.models import Article
 from facebook.models import Trya
 from facebook.models import Page
 from facebook.models import Comment
+from django.http import HttpResponse
+from django.views.decorators.http import require_POST
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.csrf import csrf_exempt
+import json
+
 
 # Create your views here.
 def play(request):
@@ -96,21 +102,48 @@ def trynewsfeed(request):
 def newsfeed(request):
 
         articles = Article.objects.all()
+        #pk = Article.objects.get(pk=pk)
+        if request.method == 'POST':
+            Comment.objects.create(
+                article=articles,
+                author=request.POST.get('nickname'),
+                text=request.POST.get('reply'),
+                password=request.POST.get('password')
+
+            )
+            #return redirect(f'/feed/{article.pk}')
+            return redirect('/')
+
         return render(request, 'newsfeed.html', {'articles': articles})
+
+
+# 좋아요 버튼구현
+def like_button(request,pk):
+    article = Article.objects.get(pk=pk)
+
+    if request.method == 'POST': # 폼이 전송되었을 때만 아래 코드를 실행
+        #article.like += 1
+        Article.objects.create(
+            like=request.POST.get('like')
+        )
+        article.like +1
+
+
+    return render(request, 'newsfeed.html', {'articles': article})
 
 #상세보기 페이지
 def detail_feed(request, pk):
     article = Article.objects.get(pk=pk) #프라이머리키값 만 들고
-
     if request.method == 'POST':
         Comment.objects.create(
             article=article,
             author=request.POST.get('nickname'),
             text=request.POST.get('reply'),
-            password =request.POST.get('password')
+            password=request.POST.get('password')
 
         )
         return redirect(f'/feed/{article.pk}')
+        #return redirect('/')
 
 
     return render(request, 'detail_feed.html', {'feed': article})
@@ -121,7 +154,7 @@ def new_feed(request):
         new_article = Article.objects.create(
             author=request.POST['author'],
             title=request.POST['title'],
-            text=request.POST['content']+"추신: 감사합니다",
+            text=request.POST['content'],
             password=request.POST['password']
         )
         return redirect('/')
@@ -140,10 +173,20 @@ def remove_feed(request,pk):
              return redirect('/fail/')
     return  render(request, 'remove_feed.html',{'feed':article})
 
+# 코멘트 삭제 페이지
+def remove_comment(request, pk):
+    comment = Comment.objects.get(pk=pk)
+    if request.method=='POST':
+        if request.POST['password'] == comment.password:
+            comment.delete()
+            return redirect('/')
+        else:
+            return redirect('/fail/')
+    return  render(request, 'remove_comment.html',{'comment':comment})
+
 # 오류메세지 페이지
 def fail(request):
-    #article = Article.objects.get(pk=pk)
-    #articles = Article.objects.all()
+
     return render(request, 'fail.html')
 
 
@@ -157,10 +200,28 @@ def edit_feed(request, pk):
             article.title = request.POST['title']
             article.text = request.POST['content']
             article.save()
-            return redirect(f'/feed/{article.pk}')
+            return redirect('/')
+        else:
+            return redirect('/fail/')
+            #return redirect(f'/feed/{article.pk}')
+
 
     return render(request, 'edit_feed.html', {'feed': article})
 
+# 코멘트 수정페이지
+def edit_comment(request, pk):
+
+    comment = Comment.objects.get(pk=pk)
+    if request.method == 'POST':
+        if request.POST['password'] == comment.password:
+            comment.author = request.POST['author']
+            comment.text = request.POST['content']
+            comment.save()
+            return redirect('/')
+        else:
+            return redirect('/fail/')
+
+    return render(request, 'edit_comment.html', {'feed': comment})
 
 def new_page(request):
     if request.method == 'POST':
@@ -186,4 +247,75 @@ def edit(request):
 def remove(request):
     return render(request, 'remove.html')
 
+@require_POST# 해당 뷰는 POST method 만 받는다.
+#@csrf_exempt
+def post_like(request):
+    if request.method == 'POST' and request.is_ajax():
+        pk = request.POST['pk']
+        status = request.POST['status']
 
+        if status == '0':
+            articles = Article.objects.get(pk=pk)
+            if articles.total_like != '':
+                articles.total_like = int(articles.total_like) + 1
+                articles.save()
+            else:
+                articles.total_like = 1
+                articles.save()
+        else:
+            articles = Article.objects.get(pk=pk)
+            if articles.total_like != '':
+                articles.total_like = int(articles.total_like) - 1
+                articles.save()
+            else:
+                articles.total_like = 0
+                articles.save()
+
+        return HttpResponse(json.dumps({"article_like":articles.total_like, "status":status}), content_type="application/json")
+    else :
+        articles = Article.objects.all()
+
+        return render(request, 'newsfeed.html', {'articles': articles})
+
+@require_POST
+#@csrf_exempt
+def comment_write(request):
+    if request.method == 'POST' and request.is_ajax():
+        name = request.POST['name']
+        password = request.POST['password']
+        content = request.POST['content']
+        article = request.POST['article']
+
+        articles = Article.objects.get(pk=article)
+        Comment.objects.create(
+            article=articles,
+            author=name,
+            text=content,
+            password=password
+        )
+        created_at = Comment.objects.latest('id').created_at
+        new_comment = Comment.objects.latest('id').id
+
+        # DB write
+        test = {
+            "name":name,
+            "password":password,
+            "content":content,
+            "article":new_comment,
+            "created_at":created_at.strftime("%Y-%m-%d %H:%M %p")
+            }
+        return HttpResponse(json.dumps(test), content_type="application/json")
+        #return HttpResponseRedirect(reverse_lazy('adopcion:solicitud_listar'))
+        #return JsonResponse({'success': name, 'errorMsg': 'error'})
+    else :
+        articles = Article.objects.all()
+        if request.method == 'POST':
+            Comment.objects.create(
+                article=articles,
+                author=request.POST.get('nickname'),
+                text=request.POST.get('reply'),
+                password=request.POST.get('password')
+
+            )
+        return HttpResponse(json.dumps({'articles': articles}), content_type="application/json")
+        #return render(request, 'newsfeed.html', {'articles': articles})
