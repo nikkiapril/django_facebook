@@ -4,6 +4,7 @@ from facebook.models import Trya
 from facebook.models import Page
 from facebook.models import Comment
 from django.http import HttpResponse
+from django.utils import timezone
 from django.views.decorators.http import require_POST
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.csrf import csrf_exempt
@@ -99,22 +100,25 @@ def trynewsfeed(request):
 # 페이스북 본격적으로 시작~!
 
 # 메인-뉴스피드
+
+def main(request):
+    return render(request, 'main.html')
+
 def newsfeed(request):
 
-        articles = Article.objects.all()
-        #pk = Article.objects.get(pk=pk)
-        if request.method == 'POST':
-            Comment.objects.create(
-                article=articles,
-                author=request.POST.get('nickname'),
-                text=request.POST.get('reply'),
-                password=request.POST.get('password')
-
+        articles = Article.objects.order_by('-created_at')
+        if request.method == 'POST':  # 폼이 전송되었을 때만 아래 코드를 실행
+            new_article = Article.objects.create(
+                author=request.POST['author'],
+                title=request.POST['title'],
+                text=request.POST['content'],
+                password=request.POST['password']
             )
-            #return redirect(f'/feed/{article.pk}')
-            return redirect('/')
+            return redirect('/main')
+            # 새글 등록 끝
 
         return render(request, 'newsfeed.html', {'articles': articles})
+
 
 
 # 좋아요 버튼구현
@@ -157,7 +161,7 @@ def new_feed(request):
             text=request.POST['content'],
             password=request.POST['password']
         )
-        return redirect('/')
+        return redirect('/main')
         # 새글 등록 끝
 
     return render(request, 'new_feed.html')
@@ -168,7 +172,7 @@ def remove_feed(request,pk):
     if request.method =='POST':
          if request.POST['password'] == article.password:
              article.delete()
-             return redirect('/')
+             return redirect('/main')
          else:
              return redirect('/fail/')
     return  render(request, 'remove_feed.html',{'feed':article})
@@ -179,7 +183,7 @@ def remove_comment(request, pk):
     if request.method=='POST':
         if request.POST['password'] == comment.password:
             comment.delete()
-            return redirect('/')
+            return redirect('/main')
         else:
             return redirect('/fail/')
     return  render(request, 'remove_comment.html',{'comment':comment})
@@ -200,7 +204,7 @@ def edit_feed(request, pk):
             article.title = request.POST['title']
             article.text = request.POST['content']
             article.save()
-            return redirect('/')
+            return redirect('/main')
         else:
             return redirect('/fail/')
             #return redirect(f'/feed/{article.pk}')
@@ -217,7 +221,7 @@ def edit_comment(request, pk):
             comment.author = request.POST['author']
             comment.text = request.POST['content']
             comment.save()
-            return redirect('/')
+            return redirect('/main')
         else:
             return redirect('/fail/')
 
@@ -246,6 +250,17 @@ def edit(request):
 
 def remove(request):
     return render(request, 'remove.html')
+
+# 서치/ 검색기능
+
+
+def search_list(request, author):
+
+    article_list = Article.objects.filter(author=author)
+
+
+    return render(request, 'newsfeed.html', { 'articles': list(article_list)})
+
 
 @require_POST# 해당 뷰는 POST method 만 받는다.
 #@csrf_exempt

@@ -38,6 +38,9 @@ from facebook.views import post_like
 from facebook.views import comment_write
 from facebook.views import remove_comment
 from facebook.views import edit_comment
+from facebook.views import search_list
+from facebook.views import main
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', play),
@@ -48,10 +51,12 @@ urlpatterns = [
     path('help/', help),
     path('warn/', warn),
     path('multiple/', multiple),
+    path('trynewsfeed/',trynewsfeed),
 
     path('new/', new_feed),
-    path('', newsfeed),
-    path('trynewsfeed/',trynewsfeed),
+    path('main/', newsfeed),
+    path('', main),
+    path('search/<author>/',search_list),
     path('feed/<pk>/',detail_feed),
     path('like', post_like),
     path('feed/<pk>/remove',remove_feed),

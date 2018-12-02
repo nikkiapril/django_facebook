@@ -7,7 +7,10 @@
     <title>뉴스피드</title>
 
 </head>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -16,7 +19,7 @@ $(document).ready(function(){
                 var pk = $(this).attr('data-article');
                 var click = $(this);
                 $.ajax({
-                    url:'like',
+                    url:'/like',
                     dataType:'json',
                     type:'POST',
                     data:{
@@ -31,19 +34,19 @@ $(document).ready(function(){
 
                         // 처음 좋아요 눌렀을때, 하트 빨갛게
                         if(result.article_like=='1'){
-                            $('#img'+pk).attr('src', '/static/redHeart.jpg');
+                            $('#img'+pk).attr('src', '/static/redHeart.png');
                         }else if(result.article_like=='0'){
-                            $('#img'+pk).attr('src', '/static/justHeart.jpg');
+                            $('#img'+pk).attr('src', '/static/justHeart.gif');
                         }
 
                         // 좋아요 아이콘 파랗게
                         console.log(result.status);
                         if(result.status==0){
-                            click.find('img').attr('src', '/static/like_blue.png');
+                            click.find('img').attr('src', '/static/thankyou.gif');
                             click.css('color', 'blue');
                             click.attr('data-status', '1');
                         }else{
-                            click.find('img').attr('src', '/static/ic_like.jpg');
+                            click.find('img').attr('src', '/static/like_icon.gif');
                             click.css('color', 'gray');
                             click.attr('data-status', '0');
                         }
@@ -63,10 +66,11 @@ $(document).ready(function(){
                     ,"content" : $(this).prevAll(".comment_content").val()
                     ,"article" : $(this).attr('data-article')
                 };
+                var comment_list = $(this).parent().prev();
             //console.log(send_data);
 
                 $.ajax({
-                    url:'comment_write',
+                    url:'/comment_write',
                     dataType:'json',
                     type:'POST',
                     data:{
@@ -98,7 +102,7 @@ $(document).ready(function(){
                         var new_comment = "<div class='comment'><span class='name'>"+result.name+"</span> "+result.content+"</div>"
                         + "<div class='comment__date'>"+check+" <a href='/feed/"+result.article+"/remove_comment'><img src='/static/ic_delete.png' height='16px'></a></div>";
 
-                        $('.comment_list').append(new_comment);
+                        comment_list.append(new_comment);
                         //alert("success");
                     }
                     ,error:function(xhr, ajaxOptions, thrownError){
@@ -112,88 +116,119 @@ $(document).ready(function(){
                 var show = $(this).attr('data-show');
 
                 if(show==1){
-                $(this).parent().parent().next('.comment_list').hide();
-                //    $('.comment_list').hide();
+                $(this).parent().parent().next('.comment_box').hide();
+                //    $('.comment_box').hide();
                     $(this).attr('data-show', '0');
                 }else{
-                $(this).parent().parent().next('.comment_list').show();
-                 //   $('.comment_list').show();
+                $(this).parent().parent().next('.comment_box').show();
+                 //   $('.comment_box').show();
                     $(this).attr('data-show', '1');
                 }
             });
 
-            <!--$('.img').click( function(){-->
-            <!--var src = ($(this).attr('src') === '/static/justHeart.jpg')-->
-                <!--? '/static/redHeart.jpg'-->
-                <!--: '/static/justHeart.jpg';-->
-            <!--$(this).attr('src', src);-->
-    <!--});-->
+            $('.search1').click(function() {
+                var k = $('.searchbar').val().trim();
+                    if(k == undefined || k == null || k == ""){
+                        alert("검색내용을 쓰세요!");
+
+                       return false;
+                       }
+                       location.href = '/search/'+k;
+
+
+            });
+
+
             $('.like_gray').click( function(){
 
-            var src = ($(this).attr('src') === '/static/ic_like.jpg')
-                ? '/static/like_blue.png'
-                : '/static/ic_like.jpg';
+            var src = ($(this).attr('src') === '/static/like_icon.gif')
+                ? '/static/thankyou.gif.png'
+                : '/static/like_icon.gif';
             $(this).attr('src', src);
 
 
 
     });
 
-
 });
 
+
+$(document).ready(function() {
+            $("#keyword").keydown(function(n) {
+                if(n.keyCode==13){
+
+                    var k = $(this).val().trim();
+                    if(k == undefined || k == null || k == ""){
+                        alert("검색내용을 쓰세요!")
+
+                       return false;
+                    }
+                    location.href = '/search/'+k;
+
+
+                }
+            })
+        })
 
 
 
 </script>
-<body>
+
 <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #d7d8dc; }
+        * { box-sizing: border-box; margin: 0; padding: 0; position: relative;}
+        body { background-color: #d7d8dc; background-image: url('/static/1yip.gif'); background-size:100% 100%; }
         .header {
-            background-color: #475d9f;
+            background-color: transparent;
+            <!--background-image: url('/static/1yip.gif');-->
             color: #fff;
             height: 42px;
-            border-bottom: 1px solid #2c3863;
+            <!--border-bottom: 1px solid white;-->
         }
         .btn1 {
             position: absolute;
             left: 0px;
         }
         .search {
-            position: absolute;
+            position:absolute;
             left: 50px;
             right: 50px;
+            width:1800px;
+            <!--width:100%;-->
         }
         .searchbar {
-            border: 1px solid #2c3863;
-            background-color: #323f6b;
-            width: 100%;
-            border-radius: 4px;
-            padding: 6px; margin-top: 7px;
-            color:#ffffff;
+            background-color: transparent;
+    margin-left:10px;
+    margin-bottom:20px;
+    width:1365px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
         }
         .btn2 {
             position: absolute;
             right: 0px;
         }
         .container {
-            background-color: #d7d8dc;
+            background-color: transparent;
+            <!--background-color: #d7d8dc;-->
         }
         .footer {
             border-top: 1px solid #cccccc;
             background-color: #fafafa;
-            height: 50px;
+            height: 5px;
             text-align: center;
-            position:fixed; bottom: 0; left: 0; right: 0;
+            position:relative; bottom: 0; left: 0; right: 0;
+        }
+        . tree_img{
+           position:fixed;
         }
         .tab1 {
             float: left;
-            width: 25%;
+            width: 50%;
         }
         .tab2 {
             float: left;
-            width: 25%;
+            width: 50%;
         }
         .tab3 {
             float: left;
@@ -204,9 +239,12 @@ $(document).ready(function(){
             width: 25%;
         }
         .feed {
-            background-color: #ffffff;
-            border-top: 1px solid #c0c0c0;
-            border-bottom: 1px solid #c0c0c0;
+            background-color: transparent;
+            <!--background-color: #ffffff;-->
+            <!--background-image: url('/static/1yip.gif');-->
+
+            border-top: -5px solid #c0c0c0;
+            border-bottom: 1px solid transparent;
             margin: 7px 0;
             padding: 12px;
         }
@@ -228,86 +266,206 @@ $(document).ready(function(){
             color: #999;
             font-size: 14px;
         }
+        <!--코멘트-!>
+         .comment_list {
+        background-color: #f0f1f4;
+        border-bottom: 1px solid #bcbdc3;
+        padding-top: 0.1px;
+    }
+​
+    .comment {
+        background-color: #fff;
+        border-radius: 30px;
+        margin: 15px;
+        padding: 15px;
+        margin-bottom: 0;
+    }
+​
+    .comment__date {
+        margin: 0 15px;
+        padding: 8px 15px;
+        padding-bottom: 0px;
+        font-size: 13px;
+    }
+​
+    .name {
+        font-weight: bold;
+        color: #445994;
+    }
+​
+    .form-wrapper {
+        padding: 15px;
+    }
+​
+    /* 똑같은 스타일을 적용하고 싶으면 ,를 입력해주면 됩니다. */
+    .form-wrapper input,
+    .form-wrapper textarea {
+        border: 1px solid #ddd;
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+​
+    #c_button {
+        border: 1px solid #405ea3;
+        background-color: #4967ad;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 3px 16px;
+        border-radius: 2px;
+    }
+    .form_box {
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.input_field {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 14px;
+    width: 100%;
+}
+.textarea_field {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 14px;
+    width: 100%;
+    height: 160px;
+}
+.write_button {
+    background-color: #475d9f;
+    border: 1px solid #323f6b;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 18px;
+}
+
     </style>
+<!---동영상플레이-->
+<body>
+<!--<div style="height:80px;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
+<!--<div style="height:80px; margin-top:-70px; float:right;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
+<!--<div style="height:80px; margin-top:-70px; float:right;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
+<div style="text-align: center; "><img src="/static/message_board.gif"></div>
 <div class="header">
 
-    <div class="btn1">
-        <a href="/new">
-            <img src="/static/ic_pencil.jpg" width="22px" style="margin:9px 0 0 13px">
-        </a></div>
-    <div class="search">
-        <input type="text" class="searchbar" placeholder="Search">
+    <div class="btn1" style="margin-right: 10px; margin-left:7px;">
+
+        <a href="/main/"><img src="/static/6.gif" width="48.4px" style="margin-top:30px;">
+        </a>
     </div>
-    <div class="btn2"><img src="/static/ic_info.jpg" width="22px" style="margin:9px 13px 0 0"></div>
+    <!--서치!!-->
+    <div class="search" style="margin-right:10px; margin-left:7px; width:1200px;"  >
+
+        <input type="text" class="searchbar"  placeholder="Whose message are you searching for?" id="keyword" onkeyup="">
+
+    </div>
+
+    <div class="btn2">
+        <img src="/static/search_icon.png" width="90px" style="margin: -5px -16px 5px 50px" class="search1">
+
+    </div>
+</div>
+<div class="form_box">
+    <form method="POST">
+        {% csrf_token %}
+    <h3>게시물 올리기</h3>
+    <input class="input_field" type="text" placeholder="글쓴이의 이름은?" name="author" ><br>
+    <input class="input_field" type="password" placeholder="글 비밀번호" name="password"><br>
+    <input class="input_field" type="text" placeholder="제목을 입력해주세요." name="title"><br>
+    <textarea class="input_field" placeholder="내용을 입력해주세요." name="content"></textarea><br>
+
+    <button class="write_button">게시</button>
+
+    </form>
 </div>
 <div class="container">
+    {% if  articles %}
     {% for feed in articles %}
     <div class="feed">
-        <h3 class="name">{{ feed.author }}</h3>
-        <div class="date">{{ feed.created_at }}</div>
+        <h3 class="name" style="color:white;">{{ feed.author }}</h3>
+        <div class="date">{{ feed.created_at }}
+            <a href="/feed/{{ feed.pk }}/edit" style="margin-left: 6px;"><img src="/static/ic_edit.png" height="16px"></a>
+            <a href="/feed/{{ feed.pk }}/remove" style="margin-left:-2px;"><img src="/static/ic_delete.png" height="16px"></a>
+        </div>
 
-        <div>
-            <a href="/feed/{{ feed.pk }}/edit"><img src="/static/ic_edit.png" height="16px"></a>
-            <a href="/feed/{{ feed.pk }}/remove"><img src="/static/ic_delete.png" height="16px"></a></div>
 
         <a class="title">{{ feed.title }}</a>
-        <p class="content">{{ feed.text }}</p>
-        <a class="more" href="/feed/{{feed.pk}}/">더보기</a>
+        <p class="content" style="color:white;">{{ feed.text }}</p>
+        <!--<a class="more" href="/feed/{{feed.pk}}/">더보기</a>-->
+        <div style="height:15px;"></div>
         <div>
             {% if feed.total_like != '0' and feed.total_like != '' %}
-            <img src="/static/redHeart.jpg" width="16px" class="img" id="img{{feed.pk}}">
+            <img src="/static/redHeart.png" width="16px" class="img" id="img{{feed.pk}}">
             {% else %}
-            <img src="/static/justHeart.jpg" width="16px" class="img" id="img{{feed.pk}}">
+            <img src="/static/justHeart.gif" width="16px" class="img" id="img{{feed.pk}}">
             {% endif %}
-            <div style="display:inline-block;">
+            <div style="display:inline-block; color:white;">
                 {{feed.total_like}}
             </div>
         </div>
         <div class="accessory">
             <div style="display:inline-block; color:gray;" class="like_btn" data-article="{{feed.pk}}" data-status="0">
-                <img src="/static/ic_like.jpg" width="16px" class="like_gray" > Like
+                <img src="/static/like_icon.gif" width="16px" class="like_gray" > Like
             </div>
             <!--<a href="/like_button/{{feed.pk}}/"> Like</a>-->
             <!--<a class="more" id="like_btn" name="like" href="" value="{{feed.pk}}">like</a> &lt;!&ndash;/like_button/{{feed.pk}}/&ndash;&gt;-->
             <!--<input type="submit" value="{{feed.pk}}" id="like_btn" />-->
 
             <div class="cmt" style="display:inline-block;" data-show="0">
-                <img src="/static/ic_comment.jpg" width="16px" > Comments
+                <img src="/static/ic_comment.png" width="16px" > Comments
             </div>
         </div>
 
     </div>
-    <div class="comment_list" style="display:none;">
+    <div class="comment_box" style="display:none;">
         <!--코멘트란을 여기에-->
 
-        {% for comment in feed.comments.all %}
-        <div class="comment"><span class="name">{{ comment.author }}</span> {{ comment.text }}</div>
-        <div class="comment__date">{{ comment.created_at }} <a href="/feed/{{ comment.pk }}/remove_comment"><img src="/static/ic_delete.png" height="16px"></a></div>
-        {% endfor %}
+        <div class="comment_list">
+            {% for comment in feed.comments.all %}
+            <div class="comment"><span class="name" style="background-color: white; border: 3px radius white;">{{ comment.author }}</span> :{{ comment.text }}</div>
+            <div class="comment__date">{{ comment.created_at }} <a href="/feed/{{ comment.pk }}/remove_comment"><img src="/static/ic_delete.png" height="16px"></a>
+                <a href="/feed/{{ comment.pk }}/edit_comment"><img src="/static/edit.png" height="16px"></a></div>
+            {% endfor %}
+        </div>
+        <hr />
+        <div class="form-wrapper">
+            <span><img src="/static/comment.gif"></span><br/>
+            <!--<form action ="" method="POST">-->
+            {% csrf_token %}
+            <input type="text" class="comment_name" name="nickname" placeholder="이름"> <br/>
+            <input type="password" class="comment_password" name="password" placeholder="비밀번호"><br/>
+            <textarea name="reply" class="comment_content" placeholder="코멘트내용"></textarea>
+            <button id="c_button" type="button" class="comment_submit" data-article="{{feed.pk}}">등록</button>
 
-        <div>
-            <div class="form-wrapper">
-                <span>Comments</span>
-                <!--<form action ="" method="POST">-->
-                {% csrf_token %}
-                <input type="text" class="comment_name" name="nickname" placeholder="이름"> <br/>
-                <input type="password" class="comment_password" name="password" placeholder="비밀번호"><br/>
-                <textarea name="reply" class="comment_content" placeholder="코멘트내용"></textarea>
-                <button type="button" class="comment_submit" data-article="{{feed.pk}}">등록</button>
-
-                <!--</form>-->
-            </div>
+            <!--</form>-->
         </div>
     </div>
 
     {% endfor %}
+    {% else %}
+    <h1> 결과가없습니다.</h1>
+    {% endif %}
 
 </div>
+
 <div class="footer">
-    <div class="tab1"><img src="/static/ic_feed.jpg" width="22px" style="margin-top: 15px"> </div>
-    <div class="tab2"><img src="/static/ic_person.jpg" width="20px" style="margin-top: 14px"></div>
-    <div class="tab3"><img src="/static/ic_globe.jpg" width="20px" style="margin-top: 14px"> </div>
-    <div class="tab4"><img src="/static/ic_etc.jpg" width="20px" style="margin-top: 14px"></div>
+    <div class="tab1"><img src="/static/ic_edit.png" width="22px" style="margin-top: 15px"> </div>
+    <div class="tab2"><img src="/static/bora_lee.gif" style="margin-top:4px;" height="35px" width=50px" style="margin-top: 14px"></div>
+    <!--<div class="tab3"><img src="/static/ic_globe.jpg" width="20px" style="margin-top: 14px"> </div>-->
+    <!--<div class="tab4"><img src="/static/ic_etc.jpg" width="20px" style="margin-top: 14px"></div>-->
 </div>
 </body>
 

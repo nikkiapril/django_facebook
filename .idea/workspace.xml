@@ -2,36 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a36a7a2c-c3e0-4dde-a6f6-d099d97261df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/facebook/static/justHeart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facebook/static/like_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facebook/static/redHeart.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facebook/templates/edit_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facebook/templates/remove_comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/1yip.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/beatiful.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/bgm.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/bora_lee.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/click.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/comment.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/facebook.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/headline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/ic_comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/justHeart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/like_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/message_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/redHeart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/search_icon .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/search_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/thankyou.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/welcome.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/static/write.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/templates/search_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/migrations/0002_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/migrations/0003_try.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/migrations/0004_trya.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/migrations/0005_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/detail_feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/detail_feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facebook/static/ic_delete.png" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/static/ic_delete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facebook/static/ic_edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/static/ic_edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facebook/templates/new_feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/new_feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facebook/templates/newsfeed.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/newsfeed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/bye.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/bye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/doguenchoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/doguenchoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/multiple.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/multiple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/myname.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/myname.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/play.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/play2.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/play2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/tryrr.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/tryrr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook/templates/pra/warn.html" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/templates/warn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facebook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/facebook/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,35 +54,36 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="html" value="58" />
-          <entry key="jpg" value="1" />
-          <entry key="png" value="1" />
-          <entry key="py" value="67" />
-          <entry key="sqlite3" value="2" />
+          <entry key="gif" value="5" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="65" />
+          <entry key="jpg" value="4" />
+          <entry key="png" value="2" />
+          <entry key="py" value="73" />
+          <entry key="sqlite3" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="58" />
-          <entry key="Image" value="2" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="67" />
+          <entry key="HTML" value="65" />
+          <entry key="Image" value="11" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="12" />
           <entry key="gitignore" value="7" />
-          <entry key="html" value="7272" />
-          <entry key="py" value="8292" />
+          <entry key="html" value="11093" />
+          <entry key="py" value="9627" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7272" />
+          <entry key="HTML" value="11093" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="8304" />
+          <entry key="Python" value="9639" />
         </counts>
       </usages-collector>
     </session>
@@ -90,10 +91,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/facebook/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebook/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+            <state relative-caret-position="209">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <element signature="e#49#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,23 +117,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebook/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="259" column="61" lean-forward="true" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="61" />
+            <state relative-caret-position="428">
+              <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <marker date="1543146606886" expanded="true" signature="493:494" ph="..." />
-                <marker date="1543146606886" expanded="true" signature="512:521" ph="..." />
-                <marker date="1543146606886" expanded="true" signature="1936:1982" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="527:528" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="546:555" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="1970:2016" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="2356:2398" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="2928:2930" ph="..." />
+                <marker date="1543756644918" expanded="true" signature="6646:6647" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/templates/remove_comment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -125,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="26" />
+            <state relative-caret-position="265">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding>
                 <element signature="e#628#659#0" expanded="true" />
               </folding>
@@ -137,59 +147,81 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebook/templates/newsfeed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="295" column="47" lean-forward="true" selection-start-line="295" selection-start-column="47" selection-end-line="295" selection-end-column="47" />
+            <state relative-caret-position="114">
+              <caret line="365" column="84" selection-start-line="365" selection-start-column="84" selection-end-line="365" selection-end-column="84" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/migrations/0002_auto_20181122_2336.py">
+        <entry file="file://$PROJECT_DIR$/facebook/static/6.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/facebook/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="564">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/templates/detail_feed.html">
+        <entry file="file://$PROJECT_DIR$/facebook/templates/new_feed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="94" column="39" selection-start-line="94" selection-end-line="95" />
+            <state relative-caret-position="950">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/templates/edit_comment.html">
+        <entry file="file://$PROJECT_DIR$/facebook/templates/remove_comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="874">
+              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/templates/edit_feed.html">
+        <entry file="file://$PROJECT_DIR$/facebook/templates/search_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="48" column="99" selection-start-line="48" selection-start-column="99" selection-end-line="48" selection-end-column="99" />
+            <state relative-caret-position="2755">
+              <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,9 +244,24 @@
       <find>remove_comm</find>
       <find>remov</find>
       <find>title</find>
-      <find>detail</find>
       <find>new</find>
       <find>cmt</find>
+      <find>comment_list</find>
+      <find>comment_box</find>
+      <find>detail</find>
+      <find>search</find>
+      <find>name</find>
+      <find>int</find>
+      <find>f'</find>
+      <find>red</find>
+      <find>create</find>
+      <find>createsnow</find>
+      <find>gif</find>
+      <find>ic_like</find>
+      <find>like_blue</find>
+      <find>thankyou</find>
+      <find>just</find>
+      <find>ic_comment</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\ghs02\PycharmProjects\facebook_koala\facebook\static</dir>
@@ -237,7 +284,6 @@
         <option value="$PROJECT_DIR$/facebook/templates/multiple.html" />
         <option value="$PROJECT_DIR$/facebook/templates/trynewsfeed.html" />
         <option value="$PROJECT_DIR$/facebook/templates/detail.html" />
-        <option value="$PROJECT_DIR$/facebook/templates/new_feed.html" />
         <option value="$PROJECT_DIR$/facebook/templates/edit_feed.html" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/core/handlers/base.py" />
         <option value="$PROJECT_DIR$/facebook/templates/fail.html" />
@@ -256,19 +302,23 @@
         <option value="$PROJECT_DIR$/facebook/templates/remove_feed.html" />
         <option value="$PROJECT_DIR$/facebook/templates/edit_comment.html" />
         <option value="$PROJECT_DIR$/facebook/templates/detail_feed.html" />
+        <option value="$PROJECT_DIR$/facebook/templates/search_list.html" />
         <option value="$PROJECT_DIR$/main/urls.py" />
+        <option value="$PROJECT_DIR$/facebook/templates/main.html" />
+        <option value="$PROJECT_DIR$/facebook/templates/new_feed.html" />
         <option value="$PROJECT_DIR$/facebook/views.py" />
         <option value="$PROJECT_DIR$/facebook/templates/newsfeed.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="26" />
-    <option name="width" value="1200" />
+    <option name="x" value="118" />
+    <option name="width" value="933" />
     <option name="height" value="970" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -328,8 +378,8 @@
       <recent name="C:\Users\ghs02\PycharmProjects\facebook_koala\facebook\templates\pra" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ghs02\PycharmProjects\facebook_koala\facebook\migrations" />
       <recent name="C:\Users\ghs02\PycharmProjects\facebook_koala\facebook\static" />
+      <recent name="C:\Users\ghs02\PycharmProjects\facebook_koala\facebook\migrations" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,100 +440,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="21" width="960" height="776" extended-state="0" />
+    <frame x="876" y="38" width="746" height="776" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8386454" visible="true" weight="0.24918744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8386454" visible="true" weight="0.03526093" />
       <window_info id="Structure" order="1" sideWeight="0.16135459" side_tool="true" weight="0.15532055" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25505444" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36547434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2496454" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.13049646" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8386454" visible="true" weight="0.15532055" />
-      <window_info id="Structure" order="1" sideWeight="0.16135459" side_tool="true" weight="0.15532055" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28895184" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/facebook/template/play.html" />
-    <entry file="file://$PROJECT_DIR$/facebook/templates/play.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/doguenchoi.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/myname.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/tryrr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/multiple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/warn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/trynewsfeed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="102" column="33" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -529,13 +511,6 @@
     <entry file="file://$PROJECT_DIR$/facebook/templates/event.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook/templates/play2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -554,32 +529,12 @@
     <entry file="file://$PROJECT_DIR$/facebook/migrations/0003_try.py" />
     <entry file="file://$PROJECT_DIR$/facebook/migrations/0004_trya.py" />
     <entry file="file://$PROJECT_DIR$/facebook/migrations/0002_page.py" />
-    <entry file="file://$PROJECT_DIR$/db.sqlite3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/db/migrations/graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1824">
           <caret line="102" column="71" selection-start-line="102" selection-start-column="71" selection-end-line="102" selection-end-column="71" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -598,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/new_feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook/templates/remove.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -620,24 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook/templates/remove_feed.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/remove_comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -655,30 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="66" column="11" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/detail_feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="94" column="39" selection-start-line="94" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/migrations/0002_auto_20181122_2336.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebook/static/justHeart.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -692,61 +602,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook/templates/edit_comment.html">
+    <entry file="file://$PROJECT_DIR$/facebook/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/migrations/0002_auto_20181122_2336.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/urls.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="26" />
+        <state relative-caret-position="133">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/edit_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.sqlite3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#628#659#0" expanded="true" />
+            <element signature="e#220#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/detail_feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="33" lean-forward="true" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/ic_comment.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/ic_edit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/facebook.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/search_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2755">
+          <caret line="145" column="30" selection-start-line="145" selection-start-column="30" selection-end-line="145" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/z5c0000a35f76f.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/redHeart.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/comment.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/remove_comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+        <state relative-caret-position="209">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#49#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding>
+            <element signature="e#628#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/static/6.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook/templates/new_feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="259" column="61" lean-forward="true" selection-start-line="259" selection-start-column="38" selection-end-line="259" selection-end-column="61" />
+        <state relative-caret-position="428">
+          <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <marker date="1543146606886" expanded="true" signature="493:494" ph="..." />
-            <marker date="1543146606886" expanded="true" signature="512:521" ph="..." />
-            <marker date="1543146606886" expanded="true" signature="1936:1982" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="527:528" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="546:555" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="1970:2016" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="2356:2398" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="2928:2930" ph="..." />
+            <marker date="1543756644918" expanded="true" signature="6646:6647" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook/templates/newsfeed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="295" column="47" lean-forward="true" selection-start-line="295" selection-start-column="47" selection-end-line="295" selection-end-column="47" />
+        <state relative-caret-position="114">
+          <caret line="365" column="84" selection-start-line="365" selection-start-column="84" selection-end-line="365" selection-end-column="84" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
