@@ -189,7 +189,7 @@ $(document).ready(function() {
             left: 0px;
         }
         .search {
-            <!--position:absolute;-->
+            position:absolute;
             left: 50px;
             right: 50px;
             <!--width:1800px;-->
@@ -199,14 +199,14 @@ $(document).ready(function() {
             background-color: transparent;
     margin-left:10px;
     margin-bottom:20px;
-    width:1365px;
+    <!--width:1365px;-->
     border-radius: 4px;
     border: 1px solid #ddd;
     padding: 10px;
         }
         .btn2 {
             position: absolute;
-            right: 0px;
+            right: 35px;
         }
         .container {
             background-color: transparent;
@@ -358,23 +358,28 @@ $(document).ready(function() {
 <!--<div style="height:80px;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
 <!--<div style="height:80px; margin-top:-70px; float:right;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
 <!--<div style="height:80px; margin-top:-70px; float:right;"><img src="/static/light.png" style="margin-top:-50px; width:500px;"></div>-->
-<div style="text-align: center; "><img src="/static/message_board.gif"></div>
-<div class="header">
+<div style="text-align: center; "><img src="/static/message_board.gif" style="width:90%;margin-left:10px;" ></div>
+<div class="header" style="height:65px;margin-bottom:15px;">
 
-    <div class="btn1" style="margin-right: 10px; margin-left:7px;">
+    <!--<div class="btn1" style="margin-right: 10px; margin-left:7px;">-->
+        <div class="btn1" style="margin-left:10px; margin-top:5px;" >
 
-        <a href="/main/"><img src="/static/6.gif" width="48.4px" style="margin-top:30px;">
+
+        <!--<a href="/main/"><img src="/static/6.gif" width="48.4px" style="margin-top:30px;">-->
+            <a href="/main/"><img src="/static/6.gif" width="48.4px" >
         </a>
     </div>
     <!--서치!!-->
-    <div class="search" style="margin-right:10px; margin-left:7px; width:1200px;"  >
+    <!--<div class="search" style="margin-right:10px; margin-left:7px; width:1200px;"  >-->
+        <div class="search" style="margin-top:20px;" >
 
-        <input type="text" class="searchbar"  placeholder="Whose message are you searching for?" id="keyword" onkeyup="">
+        <input type="text" style="width:100%;border-radius:4px;" class="searchbar"  placeholder="Whose message are you searching for?" id="keyword" onkeyup="">
 
     </div>
 
-    <div class="btn2">
-        <img src="/static/search_icon.png" width="90px" style="margin: -5px -16px 5px 50px" class="search1">
+    <div class="btn2" style="margin-top:22px;">
+        <!--<img src="/static/search_icon.png" width="90px" style="margin: -5px -16px 5px 50px" class="search1">-->
+         <img src="/static/search_icon.png" width="90px"  class="search1">
 
     </div>
 </div>
