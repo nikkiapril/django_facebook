@@ -104,6 +104,9 @@ def trynewsfeed(request):
 def main(request):
     return render(request, 'main.html')
 
+def bora(request):
+    return render(request, 'aboutme.html')
+
 def newsfeed(request):
 
         articles = Article.objects.order_by('-created_at')
@@ -301,27 +304,34 @@ def comment_write(request):
         content = request.POST['content']
         article = request.POST['article']
 
+        # 게시글번호로 Article 꺼내기
         articles = Article.objects.get(pk=article)
+
+        # 위에서꺼낸 Article과 html에서 전달받은정보로 insert
         Comment.objects.create(
             article=articles,
             author=name,
             text=content,
             password=password
         )
+
+        # 방금 insert된 생성날짜 꺼내기
         created_at = Comment.objects.latest('id').created_at
+
+        # 방금 insert된 코멘트의 pk
         new_comment = Comment.objects.latest('id').id
 
-        # DB write
+        # 저장된 데이터 html에서 보여주기위해 리턴
         test = {
             "name":name,
             "password":password,
             "content":content,
             "article":new_comment,
-            "created_at":created_at.strftime("%Y-%m-%d %H:%M %p")
+            "created_at":created_at.strftime("%Y-%m-%d %I:%M %p")
+            # 표현법=> %Y:4자리 년도, %m:2자리 월, %d:2자리 일(1월은 01로), %I: 12시간, %H: 24시간, %M:분, %p:오전/오후
             }
         return HttpResponse(json.dumps(test), content_type="application/json")
-        #return HttpResponseRedirect(reverse_lazy('adopcion:solicitud_listar'))
-        #return JsonResponse({'success': name, 'errorMsg': 'error'})
+
     else :
         articles = Article.objects.all()
         if request.method == 'POST':

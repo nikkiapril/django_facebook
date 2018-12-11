@@ -40,7 +40,7 @@ from facebook.views import remove_comment
 from facebook.views import edit_comment
 from facebook.views import search_list
 from facebook.views import main
-
+from facebook.views import bora
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', play),
@@ -55,6 +55,7 @@ urlpatterns = [
 
     path('new/', new_feed),
     path('main/', newsfeed),
+    path('bora/', bora),
     path('', main),
     path('search/<author>/',search_list),
     path('feed/<pk>/',detail_feed),

@@ -1,10 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>프로필</title>
+
 </head>
-<body>
-$END$
-</body>
-</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+$(".btn-pref .btn").click(function () {
+    $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+    // $(".tab").addClass("active"); // instead of this do the below
+    $(this).removeClass("btn-default").addClass("btn-primary");
+});
+});
+
+</script>
+
+<style>
+/* USER PROFILE PAGE */
+ .card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: gray;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+</style>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="col-lg-6 col-sm-6" style="width:100%;">
+    <div class="card hovercard">
+        <div class="card-background">
+            <img src="/static/bgc.gif">
+            <!-- http://lorempixel.com/850/280/people/9/ -->
+        </div>
+        <div class="useravatar">
+            <!--<img alt="" src="http://lorempixel.com/100/100/people/9/">-->
+            <img src="/static/Bora_yum.png">
+        </div>
+        <div class="card-info"> <span class="card-title">Bora Lee</span>
+
+        </div>
+    </div>
+    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <div class="hidden-xs">JAVA</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                <div class="hidden-xs">Arduino</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <div class="hidden-xs">Links</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="well">
+        <div class="tab-content">
+            <!--JAVA-->
+            <!--<div class="tab-pane fade in active" id="tab1" style="width:100%; margin-bottom:-8%; margin-right:-42%;">-->
+            <div class="tab-pane fade in active" id="tab1"  style="margin-bottom:-5.7%;">
+                <h3>Project based on JAVA/SPRING</h3>
+                <h6><a href="/">Click here to back to the Main Page</a></h6>
+
+                <!--1학사관리-->
+                <div style="margin-top:3.4%; margin-bottom:2%; width:30%; float:left; margin-right:0.2%;">
+
+
+                    <img src="/static/concept_1.JPG" style="width:100%;border-radius:10%;">
+
+
+
+
+
+
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:33%; float:left;">
+
+                    <img src="/static/ams.jpg" style="width:100%; border-radius:10%;">
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:34%; float:left;">
+
+                    <img src="/static/tool_1.JPG" style="width:100%;  margin-left:0.5%; border-radius:10%;">
+                </div>
+
+
+
+                <!--2학사관리-->
+                <div style="margin-top:2%; margin-bottom:2%; width:30%; float:left; margin-right:0.2%;">
+
+                    <img src="/static/concept_2.JPG" style="width:100%;border-radius:10%;">
+
+
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:33%; float:left;">
+
+
+                    <img src="/static/eurecar.jpg" style="width:100%; border-radius:10%;">
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:34%; float:left;">
+
+
+                    <img src="/static/tool_2.jpg" style="width:100%; margin-left:0.5%; border-radius:10%;">
+                </div>
+
+                <!--3학사관리-->
+                <div style="margin-top:2%; margin-bottom:2%; width:30%; float:left; margin-right:0.01%;">
+
+
+                    <img src="/static/concept_3.JPG" style="width:100%;border-radius:10%;">
+
+
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:33%; float:left;">
+
+
+                    <img src="/static/wine.jpg" style="width:100%; border-radius:10%;">
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:34%; float:left;">
+
+
+                    <img src="/static/tool_3.JPG" style="width:100%; margin-left:0.5%; border-radius:10%;">
+                </div>
+
+            </div>
+
+            <!--Ardunio-->
+            <div class="tab-pane fade in" id="tab2" style="margin-bottom:-5.7%;">
+                <h3>Project based on C/ Arduino</h3>
+                <h6><a href="/">Click here to back to the Main Page</a></h6>
+
+                <!--1학사관리-->
+                <div style="margin-top:3.4%; margin-bottom:2%; width:30%; float:left; margin-right:0.2%;">
+
+
+                    <img src="/static/concept_4.JPG" style="width:100%;border-radius:10%;">
+
+
+
+
+
+
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:33%; float:left;">
+
+                    <img src="/static/smart trashbin1.gif" style="width:100%; border-radius:10%;">
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:34%; float:left;">
+
+                    <img src="/static/tool_4.JPG" style="width:100%;  margin-left:0.5%; border-radius:10%;">
+                </div>
+
+
+
+                <!--2학사관리-->
+                <div style="margin-top:2%; margin-bottom:2%; width:30%; float:left; margin-right:0.2%;">
+
+                    <img src="/static/concept_5.JPG" style="width:100%;border-radius:10%;">
+
+
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:33%; float:left;">
+
+
+                    <img src="/static/bluetooth.gif" style="width:100%; border-radius:10%;">
+                </div>
+
+                <div style="margin-top:2%; margin-bottom:2%; width:34%; float:left;">
+
+
+                    <img src="/static/tool_06.JPG" style="width:100%; margin-left:0.5%; border-radius:10%;">
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <!--Link-->
+            <div class="tab-pane fade in" id="tab3" style="margin-bottom:-2%; background-color:transparent;">
+                <!--<h3>This is tab 3</h3>-->
+
+                <div class="info" style=" color:white;text-align:center; margin-bottom:2%; margin-top:0.1%; background-image:url('/static/coffee.gif');
+                max-width: 100%;
+max-height: 100%;
+                border-radius: 10%;  ">
+
+
+                    <div style="margin-top:-5%; padding-top:5%; color:white; color:white;"></div>
+                    <b style="font-size:250%;">BORA LEE</b><br/>
+                    <b style="font-size:160%;">31 YEARS OLD</b><br/>
+                    <b style="font-size:160%;">LIVING IN SEOUL, S.KOREA</b><br/>
+                    <b style="font-size:160%;">nikkiapril@hanmail.net</b><br/>
+                    <b style="font-size:160%;">+82-5031-7101</b></br>
+                    <b><a href="https://github.com/nikkiapril/portfolio"><img src="/static/portfolio.png" style="width:50%;"></a></b><br/>
+
+                    <div style="margin-top:-5%; padding-top:10%; color:white; color:white;"></div>
+                    <b><a href="https://nikkiapril.wixsite.com/-nikkiapril"><img src="/static/wix.png" style="width:13%; margin-top:-10%;"></a></b><br/>
+
+                    <b><a href="https://github.com/nikkiapril"><img src="/static/git.png" style="width:18%; margin-top:-5%; margin-left:-6%;"></a></b><br/>
+
+                    <b><a href="https://blog.naver.com/boraissocool"><img src="/static/naver.png" style="width:15%;margin-top:-5%;"></a></b><br/>
+                    <b><a href="https://facebook.com/CHCOMA"><img src="/static/facebook.png" style="width:25%; margin-top:-6%;"></a></b><br/>
+
+                    <br style="margin-top:-5%; margin-bottom:80%; padding-top:10%; padding-bottom:-5%; color:white; color:white;">
+
+                    <img src="/static/favQuote.gif" style="width:60%;"></br>
+                    <img src="/static/quote.jpg" style="width:40%; border-radius:16%; margin-bottom:10%;">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+
+</div>
+
